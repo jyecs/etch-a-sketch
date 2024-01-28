@@ -2,6 +2,7 @@ const BOARD_SIZE = 900;
 
 function generateGrid(size) {
     const mainContainer = document.querySelector(".container");
+    mainContainer.replaceChildren();
         
     for (let i = 0; i < size; i++) {
         let containerDiv = document.createElement("div");
@@ -16,5 +17,8 @@ function generateGrid(size) {
     }
 }
 
-
+function generateNewGrid() {
+    let size = parseInt(prompt("What woud you like the size of the grid to be?", "16"));
+    generateGrid(size);
+}
 generateGrid(16);
