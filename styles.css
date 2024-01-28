@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.container > div > div {
+    height: 100px;
+    width: 100px;
+    flex: 1 1 0;
+    background-color: blue;
+    outline: 2px red solid;
+}
