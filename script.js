@@ -26,6 +26,7 @@ function generateNewGrid() {
 }
 
 
+
 document.querySelector("button").addEventListener("click", ()=>{
     generateNewGrid();
 });
